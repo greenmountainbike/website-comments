@@ -1,24 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Green Mountain Bike Comments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f5f5;
+      color: #1e293b;
+    }
+
+    header {
+      background-color: #10b981;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    main h2 {
+      text-align: center;
+      color: #0f172a;
+    }
+
+    p {
+      text-align: center;
+      color: #334155;
+    }
+
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    /* Giscus iframe container */
+    #giscus-container {
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
 <body>
 
-<h2>Giscus test page</h2>
+  <header>
+    <h1>Green Mountain Bike Comments</h1>
+  </header>
 
-<script src="https://giscus.app/client.js"
-        data-repo="greenmountainbike/website-comments"
-        data-repo-id="R_kgDOREBGuA"
-        data-category="Comments"
-        data-category-id="DIC_kwDOREBGuM4C1mHt"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="gruvbox_dark"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+  <main>
+    <h2>Share your thoughts!</h2>
+    <p>Leave a comment or reaction using your GitHub account below:</p>
+
+    <!-- Giscus Comments Embed -->
+    <div id="giscus-container"></div>
+    <script src="https://giscus.app/client.js"
+            data-repo="greenmountainbike/website-comments"
+            data-repo-id="R_kgDOREBGuA"
+            data-category="Comments"
+            data-category-id="DIC_kwDOREBGuM4C1mHt"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="gruvbox_dark"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </main>
+
+  <footer>
+    &copy; 2026 Green Mountain Bike. All rights reserved.
+  </footer>
 
 </body>
 </html>
