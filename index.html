@@ -5,18 +5,20 @@
   <title>Green Mountain Bike Comments</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Custom Styles -->
+  <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f5f5;
+      font-family: 'Roboto', sans-serif;
+      background: #6c806c;
       color: #1e293b;
     }
 
     header {
-      background-color: #10b981;
-      color: white;
+      background-color: #3c523c;
+      color: #e9d6a8;
       padding: 2rem;
       text-align: center;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -24,26 +26,28 @@
 
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 32px;
     }
 
     main {
       max-width: 800px;
       margin: 2rem auto;
-      padding: 0 1rem;
-      background: white;
+      padding: 2rem;
+      background: #ffffff;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     main h2 {
       text-align: center;
-      color: #0f172a;
+      color: #1e293b;
+      font-family: 'Roboto', sans-serif;
     }
 
     p {
       text-align: center;
       color: #334155;
+      font-family: 'Roboto', sans-serif;
     }
 
     footer {
@@ -51,15 +55,16 @@
       margin: 2rem 0;
       color: #64748b;
       font-size: 0.9rem;
+      font-family: 'Roboto', sans-serif;
     }
 
-    /* Giscus iframe container */
+    /* Giscus container spacing */
     #giscus-container {
       margin-top: 2rem;
     }
 
     @media (max-width: 600px) {
-      header h1 { font-size: 1.5rem; }
+      header h1 { font-size: 24px; }
     }
   </style>
 </head>
@@ -73,7 +78,7 @@
     <h2>Share your thoughts!</h2>
     <p>Leave a comment or reaction using your GitHub account below:</p>
 
-    <!-- Giscus Comments Embed -->
+    <!-- Giscus Embed -->
     <div id="giscus-container"></div>
     <script src="https://giscus.app/client.js"
             data-repo="greenmountainbike/website-comments"
